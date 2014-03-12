@@ -1,0 +1,14 @@
+E:\C\PeliVaraus\PeliVaraus\bin\Debug\PeliVaraus.exe.config
+E:\C\PeliVaraus\PeliVaraus\bin\Debug\PeliVaraus.exe
+E:\C\PeliVaraus\PeliVaraus\bin\Debug\PeliVaraus.pdb
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\PeliVaraus.csprojResolveAssemblyReference.cache
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\MainWindow.baml
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\MainWindow.g.cs
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\App.g.cs
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\PeliVaraus_MarkupCompile.cache
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\PeliVaraus.g.resources
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\PeliVaraus.Properties.Resources.resources
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\PeliVaraus.csproj.GenerateResource.Cache
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\PeliVaraus.exe
+E:\C\PeliVaraus\PeliVaraus\obj\Debug\PeliVaraus.pdb
+E:\C\PeliVaraus\PeliVaraus\bin\Debug\MySql.Data.dll

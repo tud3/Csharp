@@ -1,0 +1,12 @@
+﻿<Window x:Class="PeliVaraus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Varausjärjestelmä" Height="350" Width="525">
+    <Grid>
+
+        <Button x:Name="btnTest" Content="Test connection" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Click="btnTestaus"/>
+        <Button x:Name="btnHenk" Content="Hae henkilöt" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="100" Click="btnHenk_Click"/>
+        
+        <DataGrid x:Name="datagridTable" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Height="210" Width="160" AutoGenerateColumns="True"/>
+    </Grid>
+</Window>
