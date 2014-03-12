@@ -10,25 +10,44 @@ namespace PeliVaraus
 {
     class Connection
     {
-        private string connString = "127.0.0.1;port=3306;username=root;";
+        private string connString = "server=127.0.0.1;port=3306;username=root;";
         //private string connString = "server=mysql.labranet.jamk.fi;port=3306;username=G7791;password=zZ9EDWkh59HAOQe6odjx7znq7vIQDa1i";
         private MySqlConnection myConn;
-
+        public bool isOpen = false;
        
 
         public void openConnection()
         {
+            try
+            {
+
                 myConn = new MySqlConnection(connString);
                 myConn.Open();
+                isOpen = true;
                 MessageBox.Show("Nyt se on auki...");
-                
+            }
+
+            catch 
+            {
+                MessageBox.Show("virhe :(");
+            }
         }
 
         public void closeConnection() 
         {
-            myConn.Close();
-            MessageBox.Show("...ja nyt se on kii!");
+            try
+            {
+                myConn.Close();
+                isOpen = false;
+                MessageBox.Show("...ja nyt se on kii!");
+            }
+
+            catch 
+            { 
+                MessageBox.Show("ei saatu suljettua"); 
+            }
         }
+
 
     }
 }

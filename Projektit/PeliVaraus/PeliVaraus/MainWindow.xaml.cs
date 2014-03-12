@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySql.Data;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -27,22 +28,15 @@ namespace PeliVaraus
         {
             InitializeComponent();
         }
+        DataSet ds = new DataSet();
+        MySqlDataAdapter da= new MySqlDataAdapter();
         Connection connection = new Connection();
         private void btnTestaus(object sender, RoutedEventArgs e)
         {
-            try
+            connection.openConnection();
+            if(connection.isOpen==true)
             {
-                connection.openConnection();                
-            }
-    
-            catch
-            {
-                MessageBox.Show("Virhe!");
-            }
-
-            finally
-            {
-                connection.closeConnection();
+              connection.closeConnection();
             }
         }
 
@@ -50,14 +44,12 @@ namespace PeliVaraus
         {
             try 
             {
-                string sql = "use g7791; SELECT * FROM henkilo;";
+                string sql = "SELECT * FROM g7791.henkilo;";
                 connection.openConnection();
-                MySqlDataAdapter myDA = new MySqlDataAdapter();
-                MySqlCommandBuilder cmd = new MySqlCommandBuilder(myDA);
-                DataSet ds = new DataSet();
+                //MySqlCommandBuilder cmd = new MySqlCommandBuilder(da);
+                da.SelectCommand = new MySqlCommand(sql);
+                MessageBox.Show("toimii...");
                 
-                
-
             }
             catch 
             {
